@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>SweetZpot single session analyzer</h1>
+            <label for="input-file" class="label-file">Select SweetZpot files</label>
+            <input id="input-file" type="file" class="file" multiple />
+            <div class="row">
+                <div id="summary">
+                    <div class="data">
+                        <label>Duration :&nbsp;</label>
+                        <span id="duration"></span> (<span id="start-time"></span> - <span id="end-time"></span>)
+                    </div>
+                    <div class="data">
+                        <label>Avg. Pace :&nbsp;</label>
+                        <span id="average-pace"></span>
+                    </div>
+                    <div class="data">
+                        <label>Distance :&nbsp;</label>
+                        <span id="distance"></span>
+                    </div>
+                    <div class="data">
+                        <label>Avg. Stroke Rate :&nbsp;</label>
+                        <span id="average-stroke-rate"></span>
+                    </div>
+                </div>
+                <div id="datas">
+                </div>
+            </div>
+        </div>
+        <script src="https://d3js.org/d3.v4.min.js"></script>        
+        <script src="js/moment-with-locales.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
